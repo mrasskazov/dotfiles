@@ -1,0 +1,22 @@
+set nocompatible
+colorscheme delek
+
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+set smartindent
+
+set nowrap
+set number
+
+set cc=80
+
+set hlsearch
+set nowrapscan
+" don't jump to next on *
+nnoremap * *N
+" turn off highlight of search results: Ctrl-F8
+nnoremap <C-F8> :nohlsearch<CR>
+" search selection on * in visual mode
+vnoremap * y :execute ":let @/=@\""<CR> :execute "set hlsearch"<CR>
