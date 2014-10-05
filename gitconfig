@@ -1,0 +1,19 @@
+[color]
+	ui = auto
+[user]
+	name = Max Rasskazov
+	email = mrasskazov@mirantis.com
+[core]
+	editor = vim
+[alias]
+	hist = log --graph --decorate
+	glog = log --graph --decorate --oneline
+	plog = log --graph --decorate --oneline --patch-with-stat
+	nlog = log --graph --decorate --oneline --name-status
+	mglog = log --graph --decorate
+	mplog = log --graph --decorate --patch-with-stat
+	mnlog = log --graph --decorate --name-status
+[gitreview]
+	username = mrasskazov
+[merge]
+	tool = vimdiff
