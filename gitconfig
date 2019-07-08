@@ -2,14 +2,14 @@
 	ui = auto
 [user]
 	name = Maxim Rasskazov
-	email = mrasskazov@griddynamics.com
+	email = mrasskazov@mirantis.com
 [core]
 	editor = vim
 [alias]
 	hist = log --graph --decorate
 	glog = log --graph --decorate --oneline
-	plog = log --graph --decorate --oneline --patch-with-stat
-	nlog = log --graph --decorate --oneline --name-status
+	plog = log --graph --decorate --patch-with-stat
+	nlog = log --graph --decorate --name-status
 	mglog = log --graph --decorate
 	mplog = log --graph --decorate --patch-with-stat
 	mnlog = log --graph --decorate --name-status
