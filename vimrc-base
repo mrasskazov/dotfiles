@@ -1,5 +1,5 @@
 set nocompatible
-colorscheme delek
+colorscheme peachpuff
 syntax on
 
 set tabstop=4
@@ -11,7 +11,7 @@ set smartindent
 set nowrap
 set number
 
-set cc=80
+"set cc=80
 
 set hlsearch
 set nowrapscan
