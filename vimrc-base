@@ -11,13 +11,40 @@ set smartindent
 set nowrap
 set number
 
+set iskeyword+=-
 "set cc=80
 
 set hlsearch
 set nowrapscan
+set backspace=indent,eol,start
+"
+set ruler
+set completeopt-=preview
+set gcr=a:blinkon0
+set ttyfast
+
+set switchbuf=useopen
+"
 " don't jump to next on *
 nnoremap * *N
 " turn off highlight of search results: Ctrl-F8
 nnoremap <C-F8> :nohlsearch<CR>
 " search selection on * in visual mode
 vnoremap * y :execute ":let @/=@\""<CR> :execute "set hlsearch"<CR>
+vnoremap Y :execute ":!pbcopy"<CR> u
+
+" Tab compketion and documentation
+" autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
+au BufRead,BufNewFile *.yaml set filetype=ansible
+au BufRead,BufNewFile *.yml set filetype=ansible
+au BufRead,BufNewFile *.ctmpl set filetype=liquid
+au BufRead,BufNewFile *.ctpl set filetype=liquid
+au BufRead,BufNewFile *.Dockerfile set filetype=Dockerfile
+au BufRead,BufNewFile Dockerfile* set filetype=Dockerfile
+au BufRead,BufNewFile Jenkinsfile* set filetype=groovy
