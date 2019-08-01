@@ -5,6 +5,8 @@
 	email = mrasskazov@mirantis.com
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
+	ignorecase = true
 [alias]
 	hist = log --graph --decorate
 	glog = log --graph --decorate --oneline
@@ -17,3 +19,5 @@
 	username = mrasskazov
 [merge]
 	tool = vimdiff
+[http]
+	#sslVerify = false
